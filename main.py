@@ -1,12 +1,9 @@
 
 
-from cgitb import text
-import string
 import tkinter as tk
 import subprocess
 
-import keyboard
-from yaml import dump 
+
 
 
 
