@@ -19,7 +19,7 @@ window.configure(background="blue")
 window.grid_columnconfigure(0, weight=1) 
 
 
-scritta = tk.Label(window, text="Benvenuto nel mio programma!", font=("Helvetica",15)) 
+scritta = tk.Label(window, text="Welcome!", font=("Helvetica",15)) 
 scritta.grid(row=0, column=0,  sticky="N", padx=20, pady=10)      
 
 sito = tk.StringVar
@@ -48,7 +48,7 @@ def smetti():
     a.write("import os,json,lz4.block,time \n")
     a.write("f = open(\"siti.dat\",\"r\") \n")
     a.write("sito = f.read()\n")
-    a.write("d = open(\"/home/lorenzo/snap/firefox/common/.mozilla/firefox/8gnxd9f4.default/sessionstore-backups/recovery.jsonlz4\", \"rb\") \n")
+    a.write("d = open(\"/home/user/snap/firefox/common/.mozilla/firefox/8gnxd9f4.default/sessionstore-backups/recovery.jsonlz4\", \"rb\") \n")
     a.write("magic = d.read(8)\n")
     a.write("data = json.loads(lz4.block.decompress(d.read()).decode(\"utf-8\"))\n")
     a.write("d.close()\n")
@@ -74,13 +74,13 @@ def smetti():
     
 
 
-second_button= tk.Button(text="Smetti di procrastinare", command=smetti)
+second_button= tk.Button(text="Stop procrastinating", command=smetti)
 
 second_button.grid(row=5, column=0, sticky="WE", padx=15, pady=8)
 
 
 
-first_button = tk.Button(text="Staccati un po' dal pc", command=spegni) 
+first_button = tk.Button(text="have a break from the pc", command=spegni) 
 
 first_button.grid(row=1, column=0, sticky="W", padx=50, pady=50) 
 
