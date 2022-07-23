@@ -64,10 +64,8 @@ def smetti():
 
     
     b = open("executable.sh", "w")
-    b.write("#! /bin/bash\n")
-    b.write("xhost +local:root\n")
-    b.write("export DISPLAY=:0.0\n")
-    b.write("/home/poweroffer/executable.py")
+    b.write("#!/bin/bash\n")
+    b.write("/home/lorenzo/Scrivania/poweroffer/executable.py")
     b.close()
 
     
