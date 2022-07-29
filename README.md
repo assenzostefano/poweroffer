@@ -73,4 +73,4 @@ This project is licensed under either of:
 [![github](https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=GitHub&logoColor=white)](https://github.com/archnotwindows)
 [![twitter](https://img.shields.io/badge/Twitter-007fff?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/Lollopro59_)
 [![instagram](https://img.shields.io/badge/Instagram-8f00ff?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/lollog020406/)
-[![stackoverflow](https://img.shields.io/badge/StackOverFlow-FF8000?style=for-the-badge&logo=stackoverflow&logoColor=white)](https://stackoverflow.com/users/)
+[![stackoverflow](https://img.shields.io/badge/StackOverFlow-FF8000?style=for-the-badge&logo=stackoverflow&logoColor=white)](https://stackoverflow.com/users/19628082/archnotwindows)
