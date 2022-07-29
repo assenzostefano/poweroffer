@@ -1,21 +1,16 @@
-
-
+#Libraries for create a window
 import tkinter as tk
+#Libraries for execute command
 import subprocess
 
-
-
-
-
-
 window = tk.Tk() 
+#Resolution program
 window.geometry("800x500")
-window.title("poweroffer")
-
+#Title program
+window.title("Poweroffer")
+#Background program
 window.configure(background="blue")
-
 window.grid_columnconfigure(0, weight=1) 
-
 
 scritta = tk.Label(window, text="Welcome!", font=("Helvetica",15)) 
 scritta.grid(row=0, column=0,  sticky="N", padx=20, pady=10)      
@@ -24,14 +19,12 @@ sito = tk.StringVar
 text_input= tk.Entry(textvariable=sito)
 text_input.grid(row=3, column=0, sticky="WE", padx=10, pady=10)
 
-
-
-
+#Shutdown pc
 def spegni():
     subprocess.run('shutdown now', shell=True)
     subprocess.run('shutdown -s -t O', shell=True)
 
-
+#If i visit youtube, shutdown pc
 def smetti():
     sito = text_input.get() 
     print(sito)
@@ -68,20 +61,14 @@ def smetti():
 
     
 
-
+#Button stop procrastinating
 second_button= tk.Button(text="Stop procrastinating", command=smetti)
-
 second_button.grid(row=5, column=0, sticky="WE", padx=15, pady=8)
 
-
-
+#Button for shutdown pc
 first_button = tk.Button(text="have a break from the pc", command=spegni) 
-
 first_button.grid(row=1, column=0, sticky="W", padx=50, pady=50) 
 
-
-
-
-
+#Always open window
 if __name__ == "__main__":
     window.mainloop()
