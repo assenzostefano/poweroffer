@@ -26,6 +26,38 @@ Whith this simple python program you will be able to not procrastinate during th
 
 - Install **[Python](https://python.org)** on your machine. **Version 3.10 or higher is required!**
 - Clone the repository on your machine.
+- Put the poweroffer extracted folder in the Desktop  
+0 - Install tkinter with these commands "sudo apt-get install python3-tk" and "pip install tk"
+
+1 - Install os,json and time ( but probably these libraries are already installed on your system)
+
+2 - become a root user ( with " su " command and continue to do all the operations with root)
+
+3 - Install lz4.block with this command "pip install lz4"
+
+4 - download all the repository files and put the poweroffer folder in your desktop
+
+5 - open a terminal emulator and write "crontab -e" ( if is your first time you may have to choose witch editor you wanna use)
+
+6 - write at the end of the file this string " * * * * * /bin/bash /home/your-username/Desktop/poweroffer/executable.sh "
+
+7 - close the editor and save the changes
+
+8 - search for this file "recovery.jsonlz4" and copy it's path
+
+9 - edit the main.py file and scroll down until you see this
+
+![Istantanea_2022-07-21_14-07-03](https://user-images.githubusercontent.com/108471111/180209819-e4a4d0e0-80db-4a75-8689-e00b6b1ed44a.png)
+
+
+10 - replace the selected area with the path you have copied 
+
+11 - exit from the root user and login to your everyday user 
+
+11 - open a terminal and run the index.py file using " python3 index.py " to execute the program ( use this command every time you wanna run my program :)
+
+
+
 - Open your console in the cloned repository.
 - To complete the installation, write the following command in the console:
 ```console
