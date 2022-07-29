@@ -23,10 +23,14 @@
 
 Whith this simple python program you will be able to not procrastinate during the day in some sort of website (like Youtube) that you can choose! so try it out!!
 ## Getting Started
-
-- Install **[Python](https://python.org)** on your machine. **Version 3.10 or higher is required!**
-- Clone the repository on your machine.
-- Put the poweroffer extracted folder in the Desktop  
+  WARNING!! to use this software you must use a linux distro and the Firefox web browser
+  
+0 - Install **[Python](https://python.org)** on your machine. **Version 3.10 or higher is required!**
+  
+1 - Clone the repository on your machine.
+  
+2 - Put the poweroffer extracted folder in the Desktop  
+  
 0 - Install tkinter with these commands "sudo apt-get install python3-tk" and "pip install tk"
 
 1 - Install os,json and time ( but probably these libraries are already installed on your system)
@@ -58,10 +62,6 @@ Whith this simple python program you will be able to not procrastinate during th
 
 
 
-- Open your console in the cloned repository.
-- To complete the installation, write the following command in the console:
-```console
-pip install -r requirements.txt
 ```
 - To start Poweroffer, write the following command in the console:
 ```console
