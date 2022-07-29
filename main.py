@@ -2,6 +2,17 @@
 import tkinter as tk
 #Libraries for execute command
 import subprocess
+#Libraries for read web browser history
+from browser_history.browsers import Firefox
+
+#Print all browser history on txt
+with open('history.txt', 'w') as f:
+    fi = Firefox()
+    outputs = fi.fetch_history()
+    his = outputs.histories
+    for line in his:
+        f.write(str(line))
+        f.write('\n')
 
 window = tk.Tk() 
 #Resolution program
