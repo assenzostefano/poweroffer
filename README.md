@@ -23,7 +23,7 @@
 
 Whith this simple python program you will be able to not procrastinate during the day in some sort of website (like Youtube) that you can choose! so try it out!!
 ## Getting Started
-  WARNING!! to use this software you must use a linux distro and the Firefox web browser
+  **WARNING!! to use this software you must use a linux distro and the Firefox web browser**
   
 0 - Install **[Python](https://python.org)** on your machine. **Version 3.10 or higher is required!**
   
@@ -61,12 +61,6 @@ Whith this simple python program you will be able to not procrastinate during th
 11 - open a terminal and run the index.py file using " python3 index.py " to execute the program ( use this command every time you wanna run my program :)
 
 
-
-```
-- To start Poweroffer, write the following command in the console:
-```console
-python3  main.py
-```
 
 ## License
 
