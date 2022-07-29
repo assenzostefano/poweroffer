@@ -21,8 +21,7 @@
     <img alt="Stars" src="https://img.shields.io/github/stars/archnotwindows/poweroffer?logo=github">
   </a>
 
-Poweroffer is a small and simple Python program that is used to remove distractions (like Youtube) and not procrastinate.
-
+Whith this simple python program you will be able to not procrastinate during the day in some sort of website (like Youtube) that you can choose! so try it out!!
 ## Getting Started
 
 - Install **[Python](https://python.org)** on your machine. **Version 3.10 or higher is required!**
@@ -34,7 +33,7 @@ pip install -r requirements.txt
 ```
 - To start Poweroffer, write the following command in the console:
 ```console
-python main.py
+python3  main.py
 ```
 
 ## License
@@ -44,7 +43,7 @@ This project is licensed under either of:
 
 ## Contact
 
-[![gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=Gmail&logoColor=white)](mailto:)
+[![gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=Gmail&logoColor=white)](mailto:lorenzo020406@gmail.com)
 [![github](https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=GitHub&logoColor=white)](https://github.com/archnotwindows)
 [![twitter](https://img.shields.io/badge/Twitter-007fff?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/Lollopro59_)
 [![instagram](https://img.shields.io/badge/Instagram-8f00ff?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/lollog020406/)
