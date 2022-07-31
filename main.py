@@ -1,56 +1,70 @@
-#Libraries for create a window
+#Libraries for create window
 import tkinter as tk
-#Libraries for execute command
+#Libraries for run command
 import subprocess
-#Libraries for read web browser history
-from browser_history import get_history
-#Libraries for date time
-from datetime import datetime
-#Libraries for read csv
-import csv
 
-#Print all browser history on cvs
-outputs = get_history()
-outputs.save("history.csv")
-
-#Get current date
-now = datetime.now()
-date_time_str = now.strftime("%Y-%m-%d %H:%M")
-print('DateTime String:', date_time_str)
-
-#Search Youtube Link on history.csv
-how_to_search = 'https://www.youtube.com/'
-rows = []
-with open('history.csv', 'rt') as f:
-     reader = csv.reader(f, delimiter=',')
-     for line in reader:
-        if how_to_search in line:
-            print("Yes!")
-
-#Create a window
+#Create window
 window = tk.Tk()
-#Resolution program
+#Dimensional window 
 window.geometry("800x500")
-#Title program
-window.title("Poweroffer")
-#Background program
+#Title window
+window.title("poweroffer")
 window.configure(background="blue")
 window.grid_columnconfigure(0, weight=1) 
 
 #Welcome text
 scritta = tk.Label(window, text="Welcome!", font=("Helvetica",15)) 
 scritta.grid(row=0, column=0,  sticky="N", padx=20, pady=10)      
-
 sito = tk.StringVar
 text_input= tk.Entry(textvariable=sito)
 text_input.grid(row=3, column=0, sticky="WE", padx=10, pady=10)
 
-#Button stop procrastinating
-second_button= tk.Button(text="Stop procrastinating")
+#Function for shutdown PC
+def spegni():
+    subprocess.run('shutdown now', shell=True)
+    subprocess.run('shutdown -s -t O', shell=True)
+
+#Function for shutdown PC when you visit YouTube and add website
+def smetti():
+    sito = text_input.get() 
+    print(sito)
+    #Create siti.dat to save the sites to be checked, if you visit one of the sites listed, turn off your computer.
+    f = open ("siti.dat","w")
+    f.write(sito)
+    f.close()
+    #Read and save history web and if you visit one of the listed sites, turn off your computer.
+    a = open("executable.py","w")
+    a.write("#!/usr/bin/env python3 \n")
+    a.write("import os,json,lz4.block,time \n")
+    a.write("f = open(\"siti.dat\",\"r\") \n")
+    a.write("sito = f.read()\n")
+    a.write("d = open(\"/home/usr/snap/firefox/common/.mozilla/firefox/8gnxd9f4.default/sessionstore-backups/recovery.jsonlz4\", \"rb\") \n")
+    a.write("magic = d.read(8)\n")
+    a.write("data = json.loads(lz4.block.decompress(d.read()).decode(\"utf-8\"))\n")
+    a.write("d.close()\n")
+    a.write("current_window = \"\"\n")
+    a.write("for win in data.get(\"windows\"):\n")
+    a.write("   for tab in win.get(\"tabs\"):\n")
+    a.write("       i = int(tab.get(\"index\")) - 1 \n")
+    a.write("       current_window = tab.get(\"entries\")[i].get(\"url\")\n")
+    a.write("print(current_window)\n")
+    a.write("if sito in str(current_window):\n")
+    a.write("   print(\"Yes\")\n")
+    a.write("   os.system(\"shutdown now\")")
+    a.close()
+
+    #Create executable.sh for crontab (This way you can run the script every time you start your pc)
+    b = open("executable.sh", "w")
+    b.write("#!/bin/bash\n")
+    b.write("/home/lorenzo/Scrivania/poweroffer/executable.py")
+    b.close()
+
+#Stop procrastinating text
+second_button= tk.Button(text="Stop procrastinating", command=smetti)
 second_button.grid(row=5, column=0, sticky="WE", padx=15, pady=8)
 
-#Button for shutdown pc
-first_button = tk.Button(text="have a break from the pc") 
+#Have a break from the pc for shutdown PC
+first_button = tk.Button(text="have a break from the pc", command=spegni) 
 first_button.grid(row=1, column=0, sticky="W", padx=50, pady=50) 
 
 #Always open window
