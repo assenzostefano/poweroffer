@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 # Poweroffer
-=======
-# PowerOffer
->>>>>>> ead67fcfc09d7334f3dce6fa46feba1401d19992
 
 <p align="center">
   <br>
@@ -25,7 +21,6 @@
     <img alt="Stars" src="https://img.shields.io/github/stars/archnotwindows/poweroffer?logo=github">
   </a>
 
-<<<<<<< HEAD
 Whith this simple python program you will be able to not procrastinate during the day in some sort of website (like Youtube) that you can choose! so try it out!!
 ## Getting Started
   **WARNING!! to use this software you must use a linux distro and the Firefox web browser**
@@ -66,23 +61,6 @@ Whith this simple python program you will be able to not procrastinate during th
 11 - open a terminal and run the index.py file using " python3 index.py " to execute the program ( use this command every time you wanna run my program :)
 
 
-=======
-Poweroffer is a small and simple Python program that is used to remove distractions (like Youtube) and not procrastinate.
-
-## Getting Started
-
-- Install **[Python](https://python.org)** on your machine. **Version 3.10 or higher is required!**
-- Clone the repository on your machine.
-- Open your console in the cloned repository.
-- To complete the installation, write the following command in the console:
-```console
-pip install -r requirements.txt
-```
-- To start Poweroffer, write the following command in the console:
-```console
-python main.py
-```
->>>>>>> ead67fcfc09d7334f3dce6fa46feba1401d19992
 
 ## License
 
@@ -91,16 +69,8 @@ This project is licensed under either of:
 
 ## Contact
 
-<<<<<<< HEAD
 [![gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=Gmail&logoColor=white)](mailto:lorenzo020406@gmail.com)
 [![github](https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=GitHub&logoColor=white)](https://github.com/archnotwindows)
 [![twitter](https://img.shields.io/badge/Twitter-007fff?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/Lollopro59_)
 [![instagram](https://img.shields.io/badge/Instagram-8f00ff?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/lollog020406/)
 [![stackoverflow](https://img.shields.io/badge/StackOverFlow-FF8000?style=for-the-badge&logo=stackoverflow&logoColor=white)](https://stackoverflow.com/users/19628082/archnotwindows)
-=======
-[![gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=Gmail&logoColor=white)](mailto:)
-[![github](https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=GitHub&logoColor=white)](https://github.com/archnotwindows)
-[![twitter](https://img.shields.io/badge/Twitter-007fff?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/Lollopro59_)
-[![instagram](https://img.shields.io/badge/Instagram-8f00ff?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/lollog020406/)
-[![stackoverflow](https://img.shields.io/badge/StackOverFlow-FF8000?style=for-the-badge&logo=stackoverflow&logoColor=white)](https://stackoverflow.com/users/)
->>>>>>> ead67fcfc09d7334f3dce6fa46feba1401d19992
